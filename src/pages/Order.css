@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .order-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 80px;
+    align-items: flex-start; /* Align items to the top */
+    position: relative; /* Allow absolute positioning of the next button */
+  }
+  
+  .order-summary {
+    width: 30%;
+    margin-left:200px;
+  }
+  
+  .order-summary h2 {
+    margin-bottom: 20px;
+  }
+  
+  .order-summary ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .order-summary li {
+    margin-bottom: 10px;
+  }
+  
+  .add-order {
+    width: 30%;
+    margin-right:200px;
+  }
+  
+  .add-order h2 {
+    margin-bottom: 20px;
+  }
+  
+  .add-order button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-order button:hover {
+    background-color: #cc6699;
+  }
+  
+  .next-button {
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
+    padding: 10px 20px;
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #cc6699;
+  }
+  

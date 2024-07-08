@@ -1,0 +1,18 @@
+.about-us-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    background-color: #fff0f5;
+  }
+  
+  .about-us-page h1, .about-us-page h2 {
+    color: #cc6699;
+  }
+  
+  .about-us-page p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .customize-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: pink;
+    border-bottom: 3px solid #ff99cc;
+  }
+  
+  .tab {
+    padding: 5px 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    background-color: #ffe6e6;
+    border-radius: 25px 25px 0 0;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .tab.active {
+    background-color: #ff99cc;
+  }
+  
+  .options-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%; 
+    padding: 20px;
+    flex: 1 0 25%;
+  }
+  
+  .option-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .option-group label {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .preview-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure content starts at the top */
+    width: 80%;
+    padding: 20px;
+    flex: 1 0 75%; /* Take up 75% of the height */
+    background-color: #ffffff;
+    border: 3px solid #ff99cc;
+    border-bottom: 3px solid white;
+  }
+  
+  .preview-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .taco-preview {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .preview-details {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-to-cart-button {
+    background-color: #ff99cc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    margin: 20px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #cc6699;
+  }
+  

@@ -1,0 +1,82 @@
+/* Global CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-page {
+  padding: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-group,
+.sort-group {
+  display: flex;
+  align-items: center;
+}
+
+.filter-group label,
+.sort-group label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.filter-group select,
+.sort-group select {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.taco-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.taco-item {
+  width: calc(25% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.taco-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.taco-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.taco-item p {
+  margin: 5px 0;
+}
+
+.add-to-cart-button {
+  background-color: #ff99cc;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #cc6699;
+}

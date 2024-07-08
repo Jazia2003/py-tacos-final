@@ -1,0 +1,11 @@
+.footer {
+  background-color: pink;
+  text-align: center;
+  padding: 20px;
+  /*font-family: 'Sofia', serif;*/
+  border-top: 3px solid #ff99cc;
+}
+
+.footer p {
+  margin: 5px 0;
+}
