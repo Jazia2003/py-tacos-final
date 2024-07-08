@@ -4,7 +4,7 @@ import Menu from './pages/Menu';
 import Customize from './pages/Customize';
 import Order from './pages/Order';
 import Checkout from './pages/Checkout';
-import AboutUs from './pages/AboutUs'
+import AboutUs from './pages/AboutUs';
 import Confirmation from './pages/Confirmation';
 import { CartProvider } from './CartContext';
 import Header from './components/Header';
@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/py-tacos">
       <CartProvider>
         <div className="app">
           <Header />
