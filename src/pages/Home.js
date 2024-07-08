@@ -10,7 +10,7 @@ const Home = () => {
         <div className="welcome-message">
           {/* <p className="small-text">Your Sweet Adventure Starts with Ice Cream Tacos!</p> */}
           <h1>Welcome to Py's Tacos</h1>
-          <button className="deals-button" onClick={() => window.location.href='/summer-deals'}>SUMMER DEALS</button>
+          <button className="deals-button" onClick={() => window.location.href='/menu'}>SUMMER DEALS</button>
         </div>
       </div>
       <div className="middle-section">
