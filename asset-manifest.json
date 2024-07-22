@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/py-tacos-final/static/css/main.36929901.css",
-    "main.js": "/py-tacos-final/static/js/main.9ab08b2b.js",
+    "main.js": "/py-tacos-final/static/js/main.9e7db2d2.js",
     "static/media/customize-taco.png": "/py-tacos-final/static/media/customize-taco.c3d0374ab24ab4b32549.png",
     "static/media/home.png": "/py-tacos-final/static/media/home.0891f0c271e9ca643d36.png",
     "static/media/PeanutButterCrunch.webp": "/py-tacos-final/static/media/PeanutButterCrunch.40242f3cb459673f4ba7.webp",
@@ -24,10 +24,10 @@
     "static/media/logo.png": "/py-tacos-final/static/media/logo.9084391fd558d2e9bb02.png",
     "index.html": "/py-tacos-final/index.html",
     "main.36929901.css.map": "/py-tacos-final/static/css/main.36929901.css.map",
-    "main.9ab08b2b.js.map": "/py-tacos-final/static/js/main.9ab08b2b.js.map"
+    "main.9e7db2d2.js.map": "/py-tacos-final/static/js/main.9e7db2d2.js.map"
   },
   "entrypoints": [
     "static/css/main.36929901.css",
-    "static/js/main.9ab08b2b.js"
+    "static/js/main.9e7db2d2.js"
   ]
 }
