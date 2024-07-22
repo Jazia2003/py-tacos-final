@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/py-tacos-final/static/css/main.36929901.css",
+    "main.js": "/py-tacos-final/static/js/main.9ab08b2b.js",
+    "static/media/customize-taco.png": "/py-tacos-final/static/media/customize-taco.c3d0374ab24ab4b32549.png",
+    "static/media/home.png": "/py-tacos-final/static/media/home.0891f0c271e9ca643d36.png",
+    "static/media/PeanutButterCrunch.webp": "/py-tacos-final/static/media/PeanutButterCrunch.40242f3cb459673f4ba7.webp",
+    "static/media/BlueberryBurst.webp": "/py-tacos-final/static/media/BlueberryBurst.6514256c14f82a57c63c.webp",
+    "static/media/MangoTango.webp": "/py-tacos-final/static/media/MangoTango.416e1f6e4d2df7cd6e40.webp",
+    "static/media/PistachioDream.webp": "/py-tacos-final/static/media/PistachioDream.d3297a3b59d1158ef733.webp",
+    "static/media/HazelnutHeaven.webp": "/py-tacos-final/static/media/HazelnutHeaven.5dcf8e6148179f189afe.webp",
+    "static/media/CookiesandCream.webp": "/py-tacos-final/static/media/CookiesandCream.d2d3f78c1815ee123062.webp",
+    "static/media/CoffeeCrunch.webp": "/py-tacos-final/static/media/CoffeeCrunch.935fe5e888b08c6cd9c9.webp",
+    "static/media/RaspberryRipple.webp": "/py-tacos-final/static/media/RaspberryRipple.a4699f37508747052219.webp",
+    "static/media/MintyFresh.webp": "/py-tacos-final/static/media/MintyFresh.1c3ff8bf35329b6ba23e.webp",
+    "static/media/MatchaMagic.webp": "/py-tacos-final/static/media/MatchaMagic.00ab5eb7ef2f3a050b7b.webp",
+    "static/media/ChocolateDelight.webp": "/py-tacos-final/static/media/ChocolateDelight.979100f033d8b0674d5a.webp",
+    "static/media/BirthdayBash.webp": "/py-tacos-final/static/media/BirthdayBash.76890ffe3f5e49a0a54b.webp",
+    "static/media/StrawberryBliss.webp": "/py-tacos-final/static/media/StrawberryBliss.19a9df1be6617af0e780.webp",
+    "static/media/CoconutParadise.webp": "/py-tacos-final/static/media/CoconutParadise.76a8c1606a355969b603.webp",
+    "static/media/CaramelSwirl.webp": "/py-tacos-final/static/media/CaramelSwirl.a065279d28691a126142.webp",
+    "static/media/LemonZest.webp": "/py-tacos-final/static/media/LemonZest.620bd093c97247bfbce9.webp",
+    "static/media/VanillaHeaven.webp": "/py-tacos-final/static/media/VanillaHeaven.c01dbdee3f789760a6d1.webp",
+    "static/media/logo.png": "/py-tacos-final/static/media/logo.9084391fd558d2e9bb02.png",
+    "index.html": "/py-tacos-final/index.html",
+    "main.36929901.css.map": "/py-tacos-final/static/css/main.36929901.css.map",
+    "main.9ab08b2b.js.map": "/py-tacos-final/static/js/main.9ab08b2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36929901.css",
+    "static/js/main.9ab08b2b.js"
+  ]
+}
