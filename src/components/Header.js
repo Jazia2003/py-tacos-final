@@ -14,10 +14,16 @@ const Header = () => {
           <li className="nav-item"><Link to="/">Home</Link></li>
           <li className="nav-item"><Link to="/menu">Menu</Link></li>
           <li className="nav-item"><Link to="/customize">Customize</Link></li>
-          <li className="nav-item"><Link to="/order">My Order</Link></li>
           <li className="nav-item"><Link to="/aboutus">About Us</Link></li>
+          <li className="nav-item"><Link to="/contactus">Contact Us</Link></li>
         </ul>
       </nav>
+      <div className="cart-container">
+        <Link to="/order" className="cart-link">
+          <i className="fas fa-shopping-cart"></i>
+          <span className="tooltip">My Order</span>
+        </Link>
+      </div>
     </header>
   );
 };

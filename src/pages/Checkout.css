@@ -8,6 +8,39 @@ html, body {
   height: 100%;
 }
 
+.checkout-page-container {
+  width: 100%;
+}
+
+.progress-container {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progress-bar {
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff99cc;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.progress-container p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff99cc;
+}
+
 .order-form-page {
   display: flex;
   flex-direction: column;
@@ -25,7 +58,7 @@ html, body {
 .order-form-page input {
   width: 100%;
   padding: 15px; /* Increase padding for better spacing */
-  margin-bottom: 20px; /* Increase bottom margin for more spacing */
+  margin-bottom: 10px; /* Increase bottom margin for more spacing */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -53,6 +86,12 @@ html, body {
   padding: 10px; /* Add padding for spacing */
 }
 
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure the buttons take up the full width */
+}
+
 .confirm-order-button {
   background-color: #ff99cc;
   border: none;
@@ -67,4 +106,26 @@ html, body {
 
 .confirm-order-button:hover {
   background-color: #cc6699;
+}
+
+.back-button {
+  background-color: #ff99cc;
+  border: none;
+  padding: 15px 30px; 
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; 
+}
+
+.back-button:hover {
+  background-color: #cc6699;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-bottom: 10px; /* Add space between error message and input */
 }

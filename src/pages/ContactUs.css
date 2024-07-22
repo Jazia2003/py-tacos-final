@@ -1,0 +1,187 @@
+.contact-us-container {
+  justify-content: center;
+  position: relative;
+}
+
+.icon-columnn {
+  position: absolute;
+  top: -50px;
+  bottom: -60px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 0; /* Ensure icons are below the content */
+}
+
+.icon-columnn.left {
+  left: 0;
+}
+
+.icon-columnn.right {
+  right: 0;
+}
+
+.icon-columnn .fa-ice-cream,
+.icon-columnn .fa-smile {
+  font-size: 30px;
+  opacity: 0.5;
+}
+
+.icon-0 { color: #FF6347; }
+.icon-1 { color: #FFD700; }
+.icon-2 { color: #ADFF2F; }
+.icon-3 { color: #00CED1; }
+.icon-4 { color: #FF69B4; }
+.icon-5 { color: #8A2BE2; }
+.icon-6 { color: #7FFF00; }
+.icon-7 { color: #DC143C; }
+.icon-8 { color: #FF4500; }
+.icon-9 { color: #32CD32; }
+.icon-10 { color: #1E90FF; }
+.icon-11 { color: #BA55D3; }
+.icon-12 { color: #FFDAB9; }
+.icon-13 { color: #40E0D0; }
+.icon-14 { color: #EE82EE; }
+.icon-15 { color: #F0E68C; }
+.icon-16 { color: #B0C4DE; }
+.icon-17 { color: #FFA07A; }
+.icon-18 { color: #20B2AA; }
+.icon-19 { color: #87CEEB; }
+
+.contact-us-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+  background-color: #fff0f5;
+  z-index: 1; /* Ensure this is above the icons */
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us-page h1 {
+  color: #cc6699;
+  margin-bottom: 20px;
+}
+
+.faq-toggle-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #cc6699;
+  outline: none; /* Remove the default outline on focus */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.faq-toggle-button:hover {
+  color: #ff99cc; /* Change icon color on hover */
+}
+
+.faq-toggle-button .tooltip {
+  visibility: hidden;
+  background-color: #cc6699;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px 16px; /* Increase padding for a larger tooltip */
+  font-size: 1rem; /* Increase font size for a larger tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 145%; /* Adjust position for larger tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none; /* Ensure tooltip doesn't interfere with clicks */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+.faq-toggle-button .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Position at the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #cc6699 transparent transparent transparent; /* Triangle pointing downwards */
+}
+
+.faq-toggle-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ff99cc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #cc6699;
+}
+
+.faq-section {
+  margin-top: 40px;
+  position: relative;
+  z-index: 1; /* Ensure this is above the icons */
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  color: #666;
+}
+
+.faq-item a {
+  color: #cc6699;
+  text-decoration: none;
+}
+
+.faq-item a:hover {
+  text-decoration: underline;
+}

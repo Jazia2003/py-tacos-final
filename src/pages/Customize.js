@@ -1,8 +1,10 @@
 import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import './Customize.css';
-import placeholderImage from '../assets/taco-placeholder.png'; // Placeholder image for the taco
+import customizeImage from '../assets/customize-taco.png'; 
 import { CartContext } from '../CartContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCookie, faIceCream, faLemon, faRulerVertical} from '@fortawesome/free-solid-svg-icons';
 
 const Customize = () => {
   const { addToCart } = useContext(CartContext);
@@ -41,7 +43,7 @@ const Customize = () => {
     const shareData = {
       title: 'Check out my Ice Cream Taco creation!',
       text: 'I just created a personalized ice cream taco at Py\'s Tacos. Check it out!',
-      url: placeholderImage,
+      url: customizeImage,
     };
 
     if (navigator.share) {
@@ -218,17 +220,24 @@ const Customize = () => {
   return (
     <div className="customize-page">
       <div className="tabs">
-        <div className={`tab ${activeTab === 'waffles' ? 'active' : ''}`} onClick={() => setActiveTab('waffles')}>WAFFLES</div>
-        <div className={`tab ${activeTab === 'iceCream' ? 'active' : ''}`} onClick={() => setActiveTab('iceCream')}>ICE CREAM</div>
-        <div className={`tab ${activeTab === 'toppings' ? 'active' : ''}`} onClick={() => setActiveTab('toppings')}>TOPPINGS</div>
-        <div className={`tab ${activeTab === 'size' ? 'active' : ''}`} onClick={() => setActiveTab('size')}>SIZE</div>
+        <div className={`tab ${activeTab === 'waffles' ? 'active' : ''}`} onClick={() => setActiveTab('waffles')}>
+          <FontAwesomeIcon icon={faCookie} /> WAFFLES
+        </div>
+        <div className={`tab ${activeTab === 'iceCream' ? 'active' : ''}`} onClick={() => setActiveTab('iceCream')}>
+          <FontAwesomeIcon icon={faIceCream} /> ICE CREAM
+        </div>
+        <div className={`tab ${activeTab === 'toppings' ? 'active' : ''}`} onClick={() => setActiveTab('toppings')}>
+          <FontAwesomeIcon icon={faLemon} /> TOPPINGS
+        </div>
+        <div className={`tab ${activeTab === 'size' ? 'active' : ''}`} onClick={() => setActiveTab('size')}>
+          <FontAwesomeIcon icon={faRulerVertical} /> SIZE</div>
       </div>
       <div className="options-section">
         {renderOptions()}
       </div>
       <div className="preview-section">
         <h2>Personalized Ice Cream Taco</h2>
-        <img src={placeholderImage} alt="Taco Preview" className="taco-preview" />
+        <img src={customizeImage} alt="Taco Preview" className="taco-preview" />
         <div className="preview-details">
           <p><strong>Flavors:</strong> {flavors.join(', ') || 'None'}</p>
           <p><strong>Waffle:</strong> {waffle || 'None'}</p>

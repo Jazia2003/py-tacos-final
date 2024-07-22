@@ -1,18 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body {
+  font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.icon-column.left {
+  left: 0;
+}
+
+.icon-column.right {
+  right: 0;
+}
+
+.icon-column .fa-ice-cream,
+.icon-column .fa-smile {
+  font-size: 30px;
+  opacity: 0.5;
+}
+
+.icon-0 { color: #FF6347; }
+.icon-1 { color: #FFD700; }
+.icon-2 { color: #ADFF2F; }
+.icon-3 { color: #00CED1; }
+.icon-4 { color: #FF69B4; }
+.icon-5 { color: #8A2BE2; }
+.icon-6 { color: #7FFF00; }
+.icon-7 { color: #DC143C; }
+.icon-8 { color: #FF4500; }
+.icon-9 { color: #32CD32; }
+.icon-10 { color: #1E90FF; }
+.icon-11 { color: #BA55D3; }
+.icon-12 { color: #FFDAB9; }
+.icon-13 { color: #40E0D0; }
+.icon-14 { color: #EE82EE; }
+.icon-15 { color: #F0E68C; }
+.icon-16 { color: #B0C4DE; }
+.icon-17 { color: #FFA07A; }
+.icon-18 { color: #20B2AA; }
+.icon-19 { color: #87CEEB; }
+
 .about-us-page {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid #ff99cc;
-    border-radius: 10px;
-    background-color: #fff0f5;
-  }
-  
-  .about-us-page h1, .about-us-page h2 {
-    color: #cc6699;
-  }
-  
-  .about-us-page p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+  background-color: #fff0f5;
+  position: relative;
+  padding-top: 70px;
+  z-index: 1; 
+}
+
+.about-us-page h1,
+.about-us-page h2 {
+  color: #cc6699;
+}
+
+.about-us-page p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.language-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ff99cc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  z-index: 2; 
+}
+
+.language-toggle:hover {
+  background-color: #cc6699;
+}
+
+.language-toggle i {
+  margin-right: 8px;
+}
+
+.language-toggle span {
+  margin-left: 8px; 
+}

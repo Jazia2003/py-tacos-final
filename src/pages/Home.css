@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +8,10 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .home-page {
@@ -41,16 +44,6 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-}
-
-.welcome-message .small-text {
-  background-color: #93c572e0;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 300;
-  display: inline;
-  padding: 5px 10px;
-  -webkit-text-stroke:2px black;
 }
 
 .welcome-message h1 {
@@ -112,8 +105,9 @@ html, body {
   justify-content: space-around;
   width: 100%;
   background-color: rgba(0, 255, 0, 0.3);
-  /*background-color: rgba(0, 0, 255, 0.3); */
   padding: 20px 0;
+  padding-bottom: 100px;
+  padding-top: 50px;
   margin: 0; 
 }
 
@@ -137,4 +131,12 @@ html, body {
   width: 100%;
   height: 70%;
   border: 0;
+}
+
+.bottom-right h2 i {
+  margin-right: 10px;
+}
+
+.bottom-left h2 i, .bottom-middle p i {
+  margin-right: 10px;
 }

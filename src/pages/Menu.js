@@ -28,6 +28,9 @@ const Menu = () => {
     sort: 'popularity'
   });
 
+  const [confirmationMessage, setConfirmationMessage] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const { addToCart } = useContext(CartContext);
 
   const tacos = [
@@ -56,6 +59,12 @@ const Menu = () => {
 
   const handleAddToCart = (taco) => {
     addToCart(taco);
+    setConfirmationMessage(`${taco.name} has been added to your cart!`);
+    setIsModalOpen(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+      setConfirmationMessage('');
+    }, 1000); 
   };
 
   const filteredTacos = tacos
@@ -84,8 +93,8 @@ const Menu = () => {
     <div className="menu-page">
       <div className="filter-bar">
         <div className="filter-group">
-          <label>Filter By:</label>
-          <select name="flavor" onChange={handleFilterChange}>
+          <label htmlFor="flavor-filter">Filter By:</label>
+          <select name="flavor" id="flavor-filter" onChange={handleFilterChange}>
             <option value="">Ice Cream Flavor</option>
             <option value="Chocolate">Chocolate</option>
             <option value="Vanilla">Vanilla</option>
@@ -105,7 +114,7 @@ const Menu = () => {
             <option value="Matcha">Matcha</option>
             <option value="Birthday">Birthday</option>
           </select>
-          <select name="shell" onChange={handleFilterChange}>
+          <select name="shell" id="shell-filter" onChange={handleFilterChange}>
             <option value="">Waffle Shell</option>
             <option value="Plain">Plain</option>
             <option value="Sugar">Sugar</option>
@@ -116,7 +125,7 @@ const Menu = () => {
             <option value="Caramel">Caramel</option>
             <option value="Raspberry">Raspberry</option>
           </select>
-          <select name="topping" onChange={handleFilterChange}>
+          <select name="topping" id="topping-filter" onChange={handleFilterChange}>
             <option value="">Topping</option>
             <option value="Nuts">Nuts</option>
             <option value="Chocolate Chips">Chocolate Chips</option>
@@ -137,7 +146,7 @@ const Menu = () => {
             <option value="Raspberry">Raspberry</option>
           </select>
 
-          <select name="theme" onChange={handleFilterChange}>
+          <select name="theme" id="theme-filter" onChange={handleFilterChange}>
             <option value="">Theme</option>
             <option value="Valentines">Valentines</option>
             <option value="Birthday">Birthday</option>
@@ -146,23 +155,33 @@ const Menu = () => {
           </select>
         </div>
         <div className="sort-group">
-          <label>Sort By:</label>
-          <select name="sort" onChange={handleFilterChange}>
+          <label htmlFor="sort-filter">Sort By:</label>
+          <select name="sort" id="sort-filter" onChange={handleFilterChange}>
             <option value="popularity">Popularity</option>
             <option value="alphabetical">Alphabetical</option>
             <option value="price">Price</option>
           </select>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="modal" role="dialog" aria-modal="true">
+          <div className="modal-content">
+            <button className="close-button" onClick={() => setIsModalOpen(false)} aria-label="Close">&times;</button>
+            <p>{confirmationMessage}</p>
+          </div>
+        </div>
+      )}
       <div className="taco-results">
         {filteredTacos.map((taco, index) => (
-          <div key={index} className="taco-item">
-            <img src={taco.image} alt={taco.name} className="taco-image" />
-            <h3>{taco.name}</h3>
+          <article key={index} className="taco-item" role="article" aria-labelledby={`taco-title-${index}`}>
+            <img src={taco.image} alt={`${taco.name} - ${taco.description}`} className="taco-image" />
+            <h3 id={`taco-title-${index}`}>{taco.name}</h3>
             <p>${taco.price.toFixed(2)}</p>
             <p>{taco.description}</p>
-            <button className="add-to-cart-button" onClick={() => handleAddToCart(taco)}>Add to Cart</button>
-          </div>
+            <button className="add-to-cart-button" onClick={() => handleAddToCart(taco)} aria-label={`Add ${taco.name} to cart`}>
+              <i className="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+            </button>
+          </article>
         ))}
       </div>
     </div>
