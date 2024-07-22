@@ -14,7 +14,6 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     alert('Message sent successfully!');
     setForm({ name: '', email: '', message: '' });
   };

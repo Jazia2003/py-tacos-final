@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Customize from './pages/Customize';
@@ -7,7 +7,7 @@ import Order from './pages/Order';
 import Checkout from './pages/Checkout';
 import AboutUs from './pages/AboutUs';
 import Confirmation from './pages/Confirmation';
-import ContactUs from './pages/ContactUs'; // Import the ContactUs page
+import ContactUs from './pages/ContactUs'; 
 import { CartProvider } from './CartContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -33,7 +33,8 @@ function App() {
               <Route path="/checkout" component={Checkout} />
               <Route path="/confirmation" component={Confirmation} />
               <Route path="/aboutus" component={AboutUs} /> 
-              <Route path="/contactus" component={ContactUs} /> {/* Add the new route */}
+              <Route path="/contactus" component={ContactUs} /> 
+              <Redirect to="/" />
             </Switch>
           </div>
           <Footer />

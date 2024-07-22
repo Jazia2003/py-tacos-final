@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  z-index: 0; /* Ensure icons are below the content */
+  z-index: 0; 
 }
 
 .icon-columnn.left {
@@ -57,7 +57,7 @@
   border: 2px solid #ff99cc;
   border-radius: 10px;
   background-color: #fff0f5;
-  z-index: 1; /* Ensure this is above the icons */
+  z-index: 1; 
 }
 
 .contact-header {
@@ -78,12 +78,12 @@
   cursor: pointer;
   font-size: 1.5rem;
   color: #cc6699;
-  outline: none; /* Remove the default outline on focus */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  outline: none; 
+  transition: color 0.3s ease; 
 }
 
 .faq-toggle-button:hover {
-  color: #ff99cc; /* Change icon color on hover */
+  color: #ff99cc; 
 }
 
 .faq-toggle-button .tooltip {
@@ -92,30 +92,30 @@
   color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: 12px 16px; /* Increase padding for a larger tooltip */
-  font-size: 1rem; /* Increase font size for a larger tooltip */
+  padding: 12px 16px;
+  font-size: 1rem; 
   position: absolute;
   z-index: 1;
-  bottom: 145%; /* Adjust position for larger tooltip */
+  bottom: 145%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
-  pointer-events: none; /* Ensure tooltip doesn't interfere with clicks */
-  display: flex; /* Use flexbox to center content */
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center content */
+  pointer-events: none; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .faq-toggle-button .tooltip::after {
   content: '';
   position: absolute;
-  top: 100%; /* Position at the bottom of the tooltip */
+  top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #cc6699 transparent transparent transparent; /* Triangle pointing downwards */
+  border-color: #cc6699 transparent transparent transparent; 
 }
 
 .faq-toggle-button:hover .tooltip {
@@ -161,7 +161,7 @@
 .faq-section {
   margin-top: 40px;
   position: relative;
-  z-index: 1; /* Ensure this is above the icons */
+  z-index: 1;
 }
 
 .faq-item {

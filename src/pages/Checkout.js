@@ -27,7 +27,7 @@ const Checkout = () => {
     const { name, value } = e.target;
     if (name in customerInfo) {
       if (name === 'phone') {
-        const rawValue = value.replace(/\D/g, ''); // Remove non-digit characters
+        const rawValue = value.replace(/\D/g, ''); 
         let formattedValue = rawValue;
         if (rawValue.length > 3 && rawValue.length <= 6) {
           formattedValue = `${rawValue.slice(0, 3)}-${rawValue.slice(3)}`;
@@ -42,13 +42,13 @@ const Checkout = () => {
       }
     } else if (name in paymentInfo) {
       if (name === 'cardNumber') {
-        const rawValue = value.replace(/\D/g, ''); // Remove non-digit characters
-        const formattedValue = rawValue.replace(/(.{4})/g, '$1 ').trim().slice(0, 19); // Format and limit length
+        const rawValue = value.replace(/\D/g, ''); 
+        const formattedValue = rawValue.replace(/(.{4})/g, '$1 ').trim().slice(0, 19); 
         setPaymentInfo((prevInfo) => ({ ...prevInfo, [name]: formattedValue }));
         validateInput(name, formattedValue);
       } else if (name === 'exp') {
-        const rawValue = value.replace(/\D/g, '').slice(0, 4); // Remove non-digit characters and limit length
-        const formattedValue = rawValue.replace(/(\d{2})/, '$1/'); // Add slash after first 2 digits
+        const rawValue = value.replace(/\D/g, '').slice(0, 4); 
+        const formattedValue = rawValue.replace(/(\d{2})/, '$1/'); 
         setPaymentInfo((prevInfo) => ({ ...prevInfo, [name]: formattedValue }));
         validateInput(name, formattedValue);
       } else if (name === 'cvv') {
